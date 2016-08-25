@@ -35,3 +35,6 @@
 <body>
 
 <div id="wrapper">
+
+
+<?php include 'init.php'?>
