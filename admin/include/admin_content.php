@@ -15,6 +15,62 @@
                     <i class="fa fa-file"></i> Admin Dashboard
                 </li>
             </ol>
+
+            <?php
+
+
+            /*$users = User::find_all_user();
+
+            foreach ($users as $user){
+
+                echo $user->first_name . "<br>";
+
+
+            }*/
+
+
+            $user = User::find_user_by_id(1);
+
+            
+            echo $user->id;
+
+           /* $result = User::find_all_user();
+
+            while ($row = mysqli_fetch_array($result)){
+
+
+                echo $row['username'] . "<br>";
+
+            }*/
+
+
+           /* $result = User::find_user_by_id(1);
+
+            $user = new User();
+
+            $user->id = $result['id'];
+
+            $user->username = $result['username'];
+
+            $user->password = $result['password'];
+
+            $user->first_name = $result['first_name'];
+
+            $user->last_name = $result['last_name'];
+
+
+            echo $user->id*/
+
+            //echo $result['username'];
+
+
+            
+
+
+            ?>
+
+
+
         </div>
     </div>
     <!-- /.row -->

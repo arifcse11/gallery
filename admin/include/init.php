@@ -7,6 +7,6 @@
  */
 
 
+include 'functions.php';
 
-
-include 'Database.php';
+include 'database.php';
