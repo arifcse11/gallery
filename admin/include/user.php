@@ -66,6 +66,32 @@ class user
     }
 
 
+    public static function verify_user($username , $password){
+
+        global $database;
+
+        $username = $database->escape_string($username);
+
+        $password = $database->escape_string($password);
+
+
+        $sql = "SELECT * FROM users ";
+
+        $sql .="WHERE username = '{$username}' ";
+
+        $sql .="AND password = '{$password}'";
+
+
+        $result = self::find_this_query($sql);
+
+        return !empty($result) ? array_shift($result) : false;
+
+
+
+
+    }
+
+
     public static function instantiation($the_record){
 
 

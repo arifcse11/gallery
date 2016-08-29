@@ -1,3 +1,8 @@
+<?php require_once 'init.php'?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,4 +42,3 @@
 <div id="wrapper">
 
 
-<?php include 'init.php'?>

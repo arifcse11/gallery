@@ -7,6 +7,8 @@
  */
 
 
-include 'functions.php';
+require_once 'functions.php';
 
-include 'database.php';
+require_once 'database.php';
+
+require_once 'session.php';
