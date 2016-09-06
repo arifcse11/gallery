@@ -18,13 +18,13 @@
 
             <?php
 
-                 /*  $user = new User();
+                  /* $user = new User();
 
-                   $user->username = "arif123";
+                   $user->username = "sumon";
 
                    $user->password = "123";
 
-                   $user->first_name = "Arif2";
+                   $user->first_name = "Sumon";
 
                    $user->last_name = "Hossain2";
             
@@ -42,10 +42,20 @@
 
                $user->delete();*/
 
-            /*$user = User::find_all_user();
+            /*$users = User::find_all();
 
+            foreach ($users as $user){
 
-            var_dump($user);*/
+                echo $user->first_name;
+
+            }*/
+
+/*
+            $photo = new Photo();
+
+            $photo->title = "Photo from Arif";
+
+            $photo->create();*/
 
 
 
