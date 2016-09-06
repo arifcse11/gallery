@@ -18,53 +18,35 @@
 
             <?php
 
+                 /*  $user = new User();
 
-            /*$users = User::find_all_user();
+                   $user->username = "arif123";
 
-            foreach ($users as $user){
+                   $user->password = "123";
 
-                echo $user->first_name . "<br>";
+                   $user->first_name = "Arif2";
 
-
-            }*/
-
-
-            $user = User::find_user_by_id(1);
-
+                   $user->last_name = "Hossain2";
             
-            echo $user->id;
-
-           /* $result = User::find_all_user();
-
-            while ($row = mysqli_fetch_array($result)){
-
-
-                echo $row['username'] . "<br>";
-
-            }*/
-
-
-           /* $result = User::find_user_by_id(1);
-
-            $user = new User();
-
-            $user->id = $result['id'];
-
-            $user->username = $result['username'];
-
-            $user->password = $result['password'];
-
-            $user->first_name = $result['first_name'];
-
-            $user->last_name = $result['last_name'];
-
-
-            echo $user->id*/
-
-            //echo $result['username'];
-
-
             
+                   $user->create();*/
+
+
+              /* $user = User::find_user_by_id(2);
+
+               $user->username = "arif12345";
+
+               $user->update();*/
+
+               /*$user = User::find_user_by_id(2);
+
+               $user->delete();*/
+
+            /*$user = User::find_all_user();
+
+
+            var_dump($user);*/
+
 
 
             ?>
