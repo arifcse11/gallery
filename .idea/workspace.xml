@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11d6a6e-d50b-406c-b830-4893af8ecdfc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/Database.php" afterPath="$PROJECT_DIR$/admin/include/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/admin_content.php" afterPath="$PROJECT_DIR$/admin/include/admin_content.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/include/user.php" afterPath="$PROJECT_DIR$/admin/include/user.php" />
     </list>
     <ignored path="gallery.iws" />
@@ -50,30 +47,34 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/include/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+            <state relative-caret-position="-1685">
+              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
               <folding>
                 <element signature="e#7#89#0#PHP" expanded="true" />
-                <marker date="1473150851382" expanded="true" signature="463:476" placeholder="SELECT * FRO... users" />
-                <marker date="1473150851382" expanded="true" signature="463:477" placeholder="SELECT * FRO... ${self::$db_table}" />
-                <marker date="1473150851382" expanded="true" signature="463:495" placeholder="SELECT * FRO... ${self::$db_table}" />
-                <marker date="1473150851382" expanded="true" signature="463:501" placeholder="SELECT * FRO... ${self::$db_table}" />
-                <marker date="1473150851382" expanded="true" signature="463:502" placeholder="SELECT * FRO... ${self::$db_table}" />
-                <marker date="1473150851382" expanded="true" signature="641:654" placeholder="SELECT * FRO... " />
-                <marker date="1473150851382" expanded="true" signature="641:690" placeholder="SELECT * FRO... users" />
-                <marker date="1473150851382" expanded="true" signature="641:691" placeholder="SELECT * FRO... users" />
-                <marker date="1473150851382" expanded="true" signature="641:701" placeholder="SELECT * FRO... users" />
-                <marker date="1473150851382" expanded="true" signature="1459:1472" placeholder="SELECT * FRO... " />
-                <marker date="1473150851382" expanded="true" signature="1459:1473" placeholder="SELECT * FRO... ${self::$db_table}" />
-                <marker date="1473150851382" expanded="true" signature="3083:3118" placeholder="INSERT INTO users... " />
-                <marker date="1473150851382" expanded="true" signature="3083:3119" placeholder="INSERT INTO ${self::$db_table}... " />
-                <marker date="1473150851382" expanded="true" signature="3083:3120" placeholder="INSERT INTO ${self::$db_table}... " />
-                <marker date="1473150851382" expanded="true" signature="3083:3163" placeholder="INSERT INTO ${self::$db_table}... " />
-                <marker date="1473150851382" expanded="true" signature="3083:3164" placeholder="INSERT INTO ${self::$db_table}... " />
-                <marker date="1473150851382" expanded="true" signature="3720:3754" placeholder="UPDATE users... " />
-                <marker date="1473150851382" expanded="true" signature="4088:4130" placeholder="DELETE FROM " />
-                <marker date="1473150851382" expanded="true" signature="4088:4134" placeholder="DELETE FROM " />
-                <marker date="1473150851382" expanded="true" signature="4088:4171" placeholder="DELETE FROM " />
+                <marker date="1473151477718" expanded="true" signature="629:642" placeholder="SELECT * FRO... " />
+                <marker date="1473151477718" expanded="true" signature="629:643" placeholder="SELECT * FRO... ${self::$db_table}" />
+                <marker date="1473151477718" expanded="true" signature="1732:1767" placeholder="INSERT INTO users... " />
+                <marker date="1473151477718" expanded="true" signature="1732:1768" placeholder="INSERT INTO ${self::$db_table}... " />
+                <marker date="1473151477718" expanded="true" signature="1732:1769" placeholder="INSERT INTO ${self::$db_table}... " />
+                <marker date="1473151477718" expanded="true" signature="1732:1812" placeholder="INSERT INTO ${self::$db_table}... " />
+                <marker date="1473151477718" expanded="true" signature="1732:1813" placeholder="INSERT INTO ${self::$db_table}... " />
+                <marker date="1473151477718" expanded="true" signature="2369:2403" placeholder="UPDATE users... " />
+                <marker date="1473151477718" expanded="true" signature="2737:2779" placeholder="DELETE FROM " />
+                <marker date="1473151477718" expanded="true" signature="2737:2783" placeholder="DELETE FROM " />
+                <marker date="1473151477718" expanded="true" signature="2737:2820" placeholder="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db_object.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/include/db_object.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+              <folding>
+                <marker date="1473151477652" expanded="true" signature="188:202" placeholder="SELECT * FRO... ${self::$db_table}" />
+                <marker date="1473151477652" expanded="true" signature="350:410" placeholder="SELECT * FRO... ${self::$db_table}" />
               </folding>
             </state>
           </provider>
@@ -121,6 +122,7 @@
         <option value="$PROJECT_DIR$/admin/include/database.php" />
         <option value="$PROJECT_DIR$/admin/include/admin_content.php" />
         <option value="$PROJECT_DIR$/admin/include/user.php" />
+        <option value="$PROJECT_DIR$/admin/include/db_object.php" />
       </list>
     </option>
   </component>
@@ -279,12 +281,12 @@
       <workItem from="1472717102260" duration="6340000" />
       <workItem from="1472795047099" duration="2910000" />
       <workItem from="1472983151901" duration="4122000" />
-      <workItem from="1473149880182" duration="944000" />
+      <workItem from="1473149880182" duration="1537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45157000" />
+    <option name="totallyTimeSpent" value="45750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="744" extended-state="6" />
@@ -325,14 +327,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -353,26 +347,17 @@
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
             <element signature="e#7#89#0#PHP" expanded="true" />
-            <marker date="1473150851382" expanded="true" signature="463:476" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="463:477" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:495" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:501" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:502" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="641:654" placeholder="SELECT * FRO... " />
-            <marker date="1473150851382" expanded="true" signature="641:690" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="641:691" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="641:701" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="1459:1472" placeholder="SELECT * FRO... " />
-            <marker date="1473150851382" expanded="true" signature="1459:1473" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="3083:3118" placeholder="INSERT INTO users... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3119" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3120" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3163" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3164" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3720:3754" placeholder="UPDATE users... " />
-            <marker date="1473150851382" expanded="true" signature="4088:4130" placeholder="DELETE FROM " />
-            <marker date="1473150851382" expanded="true" signature="4088:4134" placeholder="DELETE FROM " />
-            <marker date="1473150851382" expanded="true" signature="4088:4171" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="629:642" placeholder="SELECT * FRO... " />
+            <marker date="1473151477718" expanded="true" signature="629:643" placeholder="SELECT * FRO... ${self::$db_table}" />
+            <marker date="1473151477718" expanded="true" signature="1732:1767" placeholder="INSERT INTO users... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1768" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1769" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1812" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1813" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="2369:2403" placeholder="UPDATE users... " />
+            <marker date="1473151477718" expanded="true" signature="2737:2779" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="2737:2783" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="2737:2820" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -441,26 +426,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#89#0#PHP" expanded="true" />
-            <marker date="1473150851382" expanded="true" signature="463:476" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="463:477" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:495" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:501" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:502" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="641:654" placeholder="SELECT * FRO... " />
-            <marker date="1473150851382" expanded="true" signature="641:690" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="641:691" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="641:701" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="1459:1472" placeholder="SELECT * FRO... " />
-            <marker date="1473150851382" expanded="true" signature="1459:1473" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="3083:3118" placeholder="INSERT INTO users... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3119" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3120" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3163" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3164" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3720:3754" placeholder="UPDATE users... " />
-            <marker date="1473150851382" expanded="true" signature="4088:4130" placeholder="DELETE FROM " />
-            <marker date="1473150851382" expanded="true" signature="4088:4134" placeholder="DELETE FROM " />
-            <marker date="1473150851382" expanded="true" signature="4088:4171" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="629:642" placeholder="SELECT * FRO... " />
+            <marker date="1473151477718" expanded="true" signature="629:643" placeholder="SELECT * FRO... ${self::$db_table}" />
+            <marker date="1473151477718" expanded="true" signature="1732:1767" placeholder="INSERT INTO users... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1768" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1769" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1812" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1813" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="2369:2403" placeholder="UPDATE users... " />
+            <marker date="1473151477718" expanded="true" signature="2737:2779" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="2737:2783" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="2737:2820" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -507,26 +483,17 @@
           <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
           <folding>
             <element signature="e#7#89#0#PHP" expanded="true" />
-            <marker date="1473150851382" expanded="true" signature="463:476" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="463:477" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:495" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:501" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:502" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="641:654" placeholder="SELECT * FRO... " />
-            <marker date="1473150851382" expanded="true" signature="641:690" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="641:691" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="641:701" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="1459:1472" placeholder="SELECT * FRO... " />
-            <marker date="1473150851382" expanded="true" signature="1459:1473" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="3083:3118" placeholder="INSERT INTO users... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3119" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3120" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3163" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3164" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3720:3754" placeholder="UPDATE users... " />
-            <marker date="1473150851382" expanded="true" signature="4088:4130" placeholder="DELETE FROM " />
-            <marker date="1473150851382" expanded="true" signature="4088:4134" placeholder="DELETE FROM " />
-            <marker date="1473150851382" expanded="true" signature="4088:4171" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="629:642" placeholder="SELECT * FRO... " />
+            <marker date="1473151477718" expanded="true" signature="629:643" placeholder="SELECT * FRO... ${self::$db_table}" />
+            <marker date="1473151477718" expanded="true" signature="1732:1767" placeholder="INSERT INTO users... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1768" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1769" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1812" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1813" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="2369:2403" placeholder="UPDATE users... " />
+            <marker date="1473151477718" expanded="true" signature="2737:2779" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="2737:2783" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="2737:2820" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -751,32 +718,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/include/db_object.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+          <folding>
+            <marker date="1473151477652" expanded="true" signature="188:202" placeholder="SELECT * FRO... ${self::$db_table}" />
+            <marker date="1473151477652" expanded="true" signature="350:410" placeholder="SELECT * FRO... ${self::$db_table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/include/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+        <state relative-caret-position="-1685">
+          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
           <folding>
             <element signature="e#7#89#0#PHP" expanded="true" />
-            <marker date="1473150851382" expanded="true" signature="463:476" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="463:477" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:495" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:501" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="463:502" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="641:654" placeholder="SELECT * FRO... " />
-            <marker date="1473150851382" expanded="true" signature="641:690" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="641:691" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="641:701" placeholder="SELECT * FRO... users" />
-            <marker date="1473150851382" expanded="true" signature="1459:1472" placeholder="SELECT * FRO... " />
-            <marker date="1473150851382" expanded="true" signature="1459:1473" placeholder="SELECT * FRO... ${self::$db_table}" />
-            <marker date="1473150851382" expanded="true" signature="3083:3118" placeholder="INSERT INTO users... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3119" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3120" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3163" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3083:3164" placeholder="INSERT INTO ${self::$db_table}... " />
-            <marker date="1473150851382" expanded="true" signature="3720:3754" placeholder="UPDATE users... " />
-            <marker date="1473150851382" expanded="true" signature="4088:4130" placeholder="DELETE FROM " />
-            <marker date="1473150851382" expanded="true" signature="4088:4134" placeholder="DELETE FROM " />
-            <marker date="1473150851382" expanded="true" signature="4088:4171" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="629:642" placeholder="SELECT * FRO... " />
+            <marker date="1473151477718" expanded="true" signature="629:643" placeholder="SELECT * FRO... ${self::$db_table}" />
+            <marker date="1473151477718" expanded="true" signature="1732:1767" placeholder="INSERT INTO users... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1768" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1769" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1812" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="1732:1813" placeholder="INSERT INTO ${self::$db_table}... " />
+            <marker date="1473151477718" expanded="true" signature="2369:2403" placeholder="UPDATE users... " />
+            <marker date="1473151477718" expanded="true" signature="2737:2779" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="2737:2783" placeholder="DELETE FROM " />
+            <marker date="1473151477718" expanded="true" signature="2737:2820" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
