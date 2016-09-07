@@ -71,8 +71,22 @@ if (!$session->is_signed_in()){
                                   
                                   <?php foreach ($photos as $photo) : ?>
                                   
-                                <td><img height="150" width="150" src="<?php echo $photo->picture_path() ?>" class="img-responsive" alt=""></td>
-                                <td><?php echo $photo->photo_id ;?></td>
+                                <td><img height="150" width="150" src="<?php echo $photo->picture_path() ?>" class="img-responsive" alt="">
+
+
+                                    <div class="pictures_link">
+
+                                        <a href="delete_photo.php?id=<?php echo $photo->id ;?>">Delete</a>
+                                        <a href="#">Edit</a>
+                                        <a href="#">View</a>
+
+
+                                    </div>
+
+
+
+                                </td>
+                                <td><?php echo $photo->id ;?></td>
                                 <td><?php echo $photo->title ;?></td>
                                 <td><?php echo $photo->description ;?></td>
                                 <td><?php echo $photo->filename ;?></td>
