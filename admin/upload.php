@@ -47,7 +47,7 @@ if (!$session->is_signed_in()){
         <!-- Top Menu Items -->
 
 
-        <?php include 'include/top_nav.php'?>
+        <?php include 'include/top_nav.php';?>
 
 
 

@@ -6,12 +6,38 @@
  * Date: 9/6/2016
  * Time: 2:41 PM
  */
+
+
 class Db_object
 {
 
+    public $errors = array();
+
+    public $upload_errors_array = array(
+
+
+        UPLOAD_ERR_OK => "There is No error",
+
+        UPLOAD_ERR_INI_SIZE => "The uploaded file exceeds the upload_max_file_size",
+
+        UPLOAD_ERR_FORM_SIZE => "The uploaded file exceeds the MAX_FILE_SIZE",
+
+        UPLOAD_ERR_PARTIAL => "The uploaded file was only partially uploaded",
+
+        UPLOAD_ERR_NO_FILE => "No file was uploaded",
+
+        UPLOAD_ERR_NO_TMP_DIR => "Missing a temporary folder",
+
+        UPLOAD_ERR_CANT_WRITE => "Failed to write file to disk",
+
+        UPLOAD_ERR_EXTENSION => "A PHP extension stopped the file upload"
+
+
+    );
+
     public static function find_all(){
 
-        $result = static::find_this_query("SELECT * FROM ". static::$db_table . " ");
+        $result = static::find_this_query("SELECT * FROM ". static::$db_table . " ORDER BY id DESC ");
 
         return $result;
 
@@ -24,12 +50,6 @@ class Db_object
         $result = static::find_this_query("SELECT * FROM " . static::$db_table . " WHERE id = $id LIMIT 1");
 
         return !empty($result) ? array_shift($result) : false;
-
-        /*$found_user = mysqli_fetch_array($result);
-        
-        return $found_user;*/
-
-        //return $result;
 
     }
 
@@ -210,8 +230,17 @@ class Db_object
 
         return (mysqli_affected_rows($database->connection) == 1) ? true : false;
 
+    }
 
+    public static function count_all(){
 
+        global $database;
+
+        $sql = "SELECT count(*) FROM " . static::$db_table;
+        $result = $database->query($sql);
+        $row = mysqli_fetch_array($result);
+
+        return array_shift($row);
     }
 
 

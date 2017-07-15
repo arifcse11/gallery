@@ -1,102 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include 'includes/navigation.php';?>
 
-<head>
+<?php 
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Blog Home - Start Bootstrap Template</title>
+$page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+$items_per_page = 4;
 
-    <!-- Custom CSS -->
-    <link href="css/blog-home.css" rel="stylesheet">
+$items_total_count = Photo::count_all();
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+$paginate = new Paginate($page, $items_per_page, $items_total_count);
 
-</head>
+$sql = "SELECT * FROM photos ";
+$sql .= "LIMIT {$items_per_page} ";
+$sql .= "OFFSET {$paginate->offset()}";
 
-<body>
+$photos = Photo::find_this_query($sql);
+
+?>
+
 
     <!-- Navigation -->
 
-    <?php include 'includes/navigation.php'?>
+    
 
     <!-- Page Content -->
-    <div class="container">
+
+
 
         <div class="row">
+            <div class="col-md-12">
 
-            <!-- Blog Entries Column -->
-            <div class="col-md-8">
+            <div class="thumbnails row">
 
+            <?php foreach ($photos as $photo): ?>
 
+                
+                    <div class="col-xs-6 col-md-3">
 
+                    <a class="thumbnail" href="photo.php?id=<?php echo $photo->id; ?>">
+
+                    <img class="home_page_photo img-responsive" src="admin/<?php echo $photo->picture_path(); ?>" alt="">
+
+                    </a>
+                        
+                    </div>
+                
+                
+
+                <?php endforeach; ?>
+
+                </div>
+
+                <nav class="text-center" aria-label="Page navigation">
+  <ul class="pagination">
+    <?php if ($paginate->page_total() > 1) {
+
+         if ($paginate->has_previous()) {
+   echo  "<li><a href='index.php?page={$paginate->previous()}' aria-label='Previous'><span aria-hidden='true'>&laquo;</span></a></li>";
+
+}
+
+     for ($i=1; $i <= $paginate->page_total() ; $i++) { 
+                        
+                        if ($i == $paginate->current_page) {
+
+                          echo  "<li class='active'><a href='index.php?page={$i}'>{$i}</a></li>";
+                      } else{
+                          echo  "<li><a href='index.php?page={$i}'>{$i}</a></li>";
+                      }
+                  }
+
+      if ($paginate->has_next()) {
+
+  echo  "<li><a href='index.php?page={$paginate->next()}' aria-label='Next'><span aria-hidden='true'>&raquo;</span></a></li>";
+
+}
+
+}
+
+?>
+
+  </ul>
+</nav>
+
+            
+                
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
-            <div class="col-md-4">
 
-                <!-- Blog Search Well -->
-                <div class="well">
-                    <h4>Blog Search</h4>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
-                                <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                        </span>
-                    </div>
-                    <!-- /.input-group -->
-                </div>
+            <!-- <div class="col-md-4"> -->
 
-                <!-- Blog Categories Well -->
+             <?php  //include 'includes/sidebar.php';?>
+            
+                
+            <!-- </div> -->
+         
 
-
-                <?php include 'includes/sidebar.php'?>
-
-
-                <!-- Side Widget Well -->
-
-
-            </div>
 
         </div>
         <!-- /.row -->
 
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-        </footer>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+    <?php include 'includes/footer.php'; ?>

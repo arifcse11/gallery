@@ -1,6 +1,19 @@
 <?php include 'include/header.php'?>
 
+<?php
 
+if (!$session->is_signed_in()){
+
+    redirect("login.php");
+
+}
+?>
+
+<?php
+
+  $users = User::find_all();
+
+?>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -9,7 +22,7 @@
         <!-- Top Menu Items -->
 
 
-        <?php include 'include/top_nav.php'?>
+        <?php include 'include/top_nav.php';?>
 
 
 
@@ -17,7 +30,7 @@
 
 
 
-        <?php include 'include/side_nav.php'?>
+        <?php include 'include/side_nav.php';?>
 
 
         <!-- /.navbar-collapse -->
@@ -37,16 +50,58 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">
                         Users
-                        <small>Subheading</small>
                     </h1>
-                    <ol class="breadcrumb">
-                        <li>
-                            <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
-                        </li>
-                        <li class="active">
-                            <i class="fa fa-file"></i> Blank Page
-                        </li>
-                    </ol>
+
+                    <a href="add_user.php" class="btn btn-primary">Add User</a>
+
+                    <div class="col-md-12">
+
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th>Username</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Photo</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                  
+                                  <?php foreach ($users as $user) : ?>
+                                  <td><?php echo $user->id ;?></td>
+                                  <td><?php echo $user->username ;?>
+                                      <div class="pictures_link">
+
+                                        <a href="delete_user.php?id=<?php echo $user->id ;?>">Delete</a>
+                                        <a href="edit_user.php?id=<?php echo $user->id ;?>">Edit</a>
+                                        <a href="#">View</a>
+
+
+                                    </div>
+                                  </td>
+                                  <td><?php echo $user->first_name ;?></td>
+                                  <td><?php echo $user->last_name ;?></td>
+                                <td><img height="150" width="150" src="<?php echo $user->image_path_and_placeholder(); ?>" class="img-responsive" alt="">
+
+
+                                    
+
+
+
+                                </td>
+                                
+                              </tr>
+
+                               <?php endforeach; ?>
+
+                            </tbody>
+                          </table>
+
+                    </div>
+
+
                 </div>
             </div>
             <!-- /.row -->
@@ -67,10 +122,3 @@
 
     <!-- jQuery -->
 <?php include 'include/footer.php'?>
-<?php
-/**
- * Created by PhpStorm.
- * User: Arif
- * Date: 8/25/2016
- * Time: 12:06 PM
- */

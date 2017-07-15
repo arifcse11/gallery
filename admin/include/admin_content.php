@@ -7,60 +7,107 @@
                 Admin Dashboard
                 <small>Subheading</small>
             </h1>
-            <ol class="breadcrumb">
-                <li>
-                    <i class="fa fa-dashboard"></i>  <a href="index.php">Dashboard</a>
-                </li>
-                <li class="active">
-                    <i class="fa fa-file"></i> Admin Dashboard
-                </li>
-            </ol>
+           
 
-            <?php
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-comments fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><?php echo $session->count; ?></div>
+                                    <div>New Views!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><?php echo Photo::count_all(); ?></div>
+                                    <div>Total Photos!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><?php echo User::count_all(); ?></div>
+                                    <div>Total Users!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><?php echo Comment::count_all(); ?></div>
+                                    <div>Total Comments!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-                  /* $user = new User();
 
-                   $user->username = "sumon";
+            <div class="row">
 
-                   $user->password = "123";
+             <div id="piechart" style="width: 900px; height: 500px;"></div>
+              
+            </div>
 
-                   $user->first_name = "Sumon";
-
-                   $user->last_name = "Hossain2";
-            
-            
-                   $user->create();*/
-
-
-              /* $user = User::find_user_by_id(2);
-
-               $user->username = "arif12345";
-
-               $user->update();*/
-
-               /*$user = User::find_user_by_id(2);
-
-               $user->delete();*/
-
-            /*$users = User::find_all();
-
-            foreach ($users as $user){
-
-                echo $user->first_name;
-
-            }*/
-
-/*
-            $photo = new Photo();
-
-            $photo->title = "Photo from Arif";
-
-            $photo->create();*/
-
-
-
-            ?>
-
+           
 
 
         </div>

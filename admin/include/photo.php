@@ -11,11 +11,15 @@ class Photo extends Db_object
 
     protected static $db_table = 'photos';
 
-    protected static $db_table_fields = array('id' , 'title', 'description', 'description' , 'filename' , 'type' , 'size');
+    protected static $db_table_fields = array('id' , 'title', 'caption', 'alternate_text' , 'description', 'description' , 'filename' , 'type' , 'size');
 
     public $id;
 
     public $title;
+    
+    public $caption;
+    
+    public $alternate_text;
 
     public $description;
 

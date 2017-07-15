@@ -1,4 +1,4 @@
-<?php require_once 'init.php'?>
+<?php require_once 'init.php';?>
 
 
 
@@ -16,6 +16,8 @@
 
     <title>SB Admin - Bootstrap Admin Template</title>
 
+    <link href="css/style.css" rel="stylesheet">
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -27,6 +29,8 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
